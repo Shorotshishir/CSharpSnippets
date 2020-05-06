@@ -12,7 +12,7 @@ namespace SecondApp
             var myclass = new MyClass();
             myclass.Age = 10;
             myclass.Home = "Earth";
-            System.Console.WriteLine("Printing attribute data from MyClass");
+            System.Console.WriteLine($"Printing attribute data from MyClass,{myclass.MyMessage()}");
             foreach (var p in typeof(MyClass).GetProperties())
             {
                 System.Console.WriteLine($"{p.Name}: {p.GetValue(myclass,null)}");
